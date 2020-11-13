@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header--menu"><i class="fa fa-bars"></i></div>
+        <div class="header--logo"> <a href="#"><i class="fab fa-github"></i></a></div>
+        <div class="header--notification"><a href="#"><i class="far fa-bell"></i></a> <i class="fa fa-circle header--notification-icon"></i></div>
+    </header>
+    <main class="main" id="main">
+        <section class="profile">
+            <div class="profile__setup">
+                <img src="./img/profile.jpg" class="profile--img" alt="">
+                <div class="profile__details">
+                    <h2 class="profile--name">Saviour Essien</h2>
+                    <p class="profile--username">Celebrity Developer</p>
+                </div>
+            </div>
+            <div>
+                <p class="profile--status"><i class="far fa-smile"></i> Set status</p>
+            </div>
+            <div>
+                <p class="profile--about">Front End Engineer | Open Source Lover | Community Builder</p>
+                <button class="profile--edit-button">Edit profile</button>
+            </div>
+            <div class="profile__extras">
+                <p class="profile__extras--company">The Boring Creatives</p>
+                <p class="profile__extras--location">Nigeria</p>
+                <p class="profile__extras--website"><a href="#"> <i class="fa fa-link"></i> theboringcreatives.com</a></p>
+                <div class="profile__extras--metrics">
+                    <p><i class="far fa-users-people"></i>  8 Followers <i class="fas fa-circle profile__extras--metrics-circle"></i> </p>
+                    <p><i></i> 4 Following <i class="fas fa-circle profile__extras--metrics-circle"></i> </p>
+                    <p><i class="far fa-star"></i>  3 </p>
+                </div>
+            </div>
+        </section>
+        <section class="tabs">
+            <div class="tabs--container">
+                <ul class="tabs--list">
+                    <li>Overview</li>
+                    <li class="tab--active">Repositories <span class="tab--badge">85</span></li>
+                    <li>Projects <span class="tab--badge">85</span></li>
+                    <li>Packages</li>
+                </ul>
+            </div>
+
+            <div class="activity">
+                <div class="search">
+                    <input type="text" class="search--input" placeholder="Find a repository">
+                    <div class="search--select-fields">
+                        <div>
+                            <button class="search--select-button">Type: <span>All <i class="fas fa-chevron-down"></i></span></button>
+                            <button class="search--select-button" id="language">Language: <span id="closeLanguage">All <i class="fas fa-chevron-down"></i></span> </button>
+                        </div>
+                        <button class="search--new-repo-button"> <i class="fas fa-book"></i> New</button>
+                    </div>
+                </div>
+    
+                <ul class="repo">
+                   <li>
+                    <div class="repo--title">
+                        <h3 class="repo--name">Trimhomes</h3>
+                        <button class="repo--button"><i class="far fa-star"></i> Star</button>
+                    </div>
+                    <div class="repo--details">
+                       <p class="repo--language"><i class="fas fa-circle"></i> Vue</p>
+                       <p class="repo--time">Updated 6 days ago</p>
+                    </div>
+                   </li>
+    
+                   <li>
+                    <div class="repo--title">
+                        <h3 class="repo--name">Book-API</h3>
+                        <button class="repo--button"><i class="far fa-star"></i> Star</button>
+                    </div>
+                    <div class="repo--details">
+                       <p class="repo--language"><i class="fas fa-circle"></i> Vue</p>
+                       <p class="repo--time">Updated 6 days ago</p>
+                    </div>
+                   </li>
+                </ul>
+                <div class="repo--pagination">
+                    <button class="repo--pagination-prev">Previous</button>
+                    <button class="repo--pagination-next">Next</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="select--option-modal" id="languageModal">
+            <ul class="select--option-list">
+                <li>Select Language <span>x</span></li>
+                <li><i class="fa fa-check"></i> All</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>Java</li>
+            </ul>
+        </div>
+    </main>
+
+        <footer class="footer">
+            <div class="footer--detail">
+                <ul class="footer--links">
+                    <li><i class="fab fa-github"></i> &copy; 2020 Github, Inc</li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Status</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact Github</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Traning</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    
+
+    <script src="./js/app.js"></script>
+    <script src="https://kit.fontawesome.com/9e1546c7fe.js" crossorigin="anonymous"></script>
+</body>
+</html>
