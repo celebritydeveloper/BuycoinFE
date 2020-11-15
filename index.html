@@ -7,16 +7,46 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/css/all.css">
 </head>
-<body>
+<body id="body" class=" ">
     <header class="header">
-        <div class="header--menu"><i class="fa fa-bars"></i></div>
-        <div class="header--logo"> <a href="#"><i class="fab fa-github"></i></a></div>
-        <div class="header--notification"><a href="#"><i class="far fa-bell"></i></a> <i class="fa fa-circle header--notification-icon"></i></div>
+        <div class="header__mobile">
+            <div class="header__mobile--menu"><i class="fa fa-bars"></i></div>
+            <div class="header__mobile--logo"> <a href="#"><i class="fab fa-github"></i></a></div>
+            <div class="header__mobile--notification"><span  class="far fa-bell"></span> <i class="fa fa-circle header--notification-icon"></i></div>
+        </div>
+
+        <div class="header__main">
+            <div class="header__main--first">
+                <a href="#" class="header__main--first--logo"><i class="fab fa-github"></i></a>
+                <input type="text" class="header__main--first--search" placeholder="Search or jump to...">
+                <ul class="header__main--first--links">
+                    <li><a href="#">Pull Request</a></li>
+                    <li><a href="#">Issues</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Explore</a></li>
+                </ul>
+            </div>
+
+            <div class="header__main--second">
+                <div class="header__main--notification"><span class="far fa-bell header__main--notification--bell"></span> <i class="fa fa-circle header--notification-icon"></i> </a></div>
+                <div class="header__main--second--addition">
+                    <span class="fa fa-plus header__main--second--plus"></span>
+                    <span class="fas fa-chevron-down header__main--second--arrow"></span>
+                </div>
+                <div class="header__main--second--profile">
+                    <img src="./img/profile.jpg" class="header__main--profile-img" alt="">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
     </header>
-    <main class="main" id="main">
-        <section class="profile">
+
+
+    <main class="main " id="main">
+        <section class="profile" id="profile">
             <div class="profile__setup">
                 <img src="./img/profile.jpg" class="profile--img" alt="">
+                <span class="profile__setup--status"><i class="far fa-smile"></i> </span>
                 <div class="profile__details">
                     <h2 class="profile--name">Saviour Essien</h2>
                     <p class="profile--username">Celebrity Developer</p>
@@ -30,23 +60,26 @@
                 <button class="profile--edit-button">Edit profile</button>
             </div>
             <div class="profile__extras">
-                <p class="profile__extras--company">The Boring Creatives</p>
-                <p class="profile__extras--location">Nigeria</p>
-                <p class="profile__extras--website"><a href="#"> <i class="fa fa-link"></i> theboringcreatives.com</a></p>
+                <div>
+                    <p class="profile__extras--company"><i class="fa fa-building"></i> The Boring Creatives</p>
+                    <p class="profile__extras--location"><i class="fa fa-map-marker-alt"></i> Nigeria</p>
+                    <p class="profile__extras--website"><a href="#"> <i class="fa fa-link"></i> theboringcreatives.com</a></p>
+                </div>
+                
                 <div class="profile__extras--metrics">
-                    <p><i class="far fa-users-people"></i>  8 Followers <i class="fas fa-circle profile__extras--metrics-circle"></i> </p>
+                    <p><i class="fa fa-users"></i>  8 Followers <i class="fas fa-circle profile__extras--metrics-circle"></i> </p>
                     <p><i></i> 4 Following <i class="fas fa-circle profile__extras--metrics-circle"></i> </p>
                     <p><i class="far fa-star"></i>  3 </p>
                 </div>
             </div>
         </section>
         <section class="tabs">
-            <div class="tabs--container">
+            <div class="tabs--container" id="tab">
                 <ul class="tabs--list">
-                    <li>Overview</li>
-                    <li class="tab--active">Repositories <span class="tab--badge">85</span></li>
-                    <li>Projects <span class="tab--badge">85</span></li>
-                    <li>Packages</li>
+                    <li><i class="fas fa-book-open"></i> Overview</li>
+                    <li class="tab--active"><i class="fas fa-book"></i> Repositories <span class="tab--badge">85</span></li>
+                    <li> <i class="fa fa-graph"></i> Projects <span class="tab--badge">85</span></li>
+                    <li><i class="fa fa-box"></i> Packages</li>
                 </ul>
             </div>
 
@@ -84,15 +117,82 @@
                        <p class="repo--time">Updated 6 days ago</p>
                     </div>
                    </li>
+
+                   <li>
+                    <div class="repo--title">
+                        <h3 class="repo--name">Book-API</h3>
+                        <button class="repo--button"><i class="far fa-star"></i> Star</button>
+                    </div>
+                    <div class="repo--details">
+                       <p class="repo--language"><i class="fas fa-circle"></i> Vue</p>
+                       <p class="repo--time">Updated 6 days ago</p>
+                    </div>
+                   </li>
+                   
+                   <li>
+                    <div class="repo--title">
+                        <h3 class="repo--name">Book-API</h3>
+                        <button class="repo--button"><i class="far fa-star"></i> Star</button>
+                    </div>
+                    <div class="repo--details">
+                       <p class="repo--language"><i class="fas fa-circle"></i> Vue</p>
+                       <p class="repo--time">Updated 6 days ago</p>
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="repo--title">
+                        <h3 class="repo--name">Book-API</h3>
+                        <button class="repo--button"><i class="far fa-star"></i> Star</button>
+                    </div>
+                    <div class="repo--details">
+                       <p class="repo--language"><i class="fas fa-circle"></i> Vue</p>
+                       <p class="repo--time">Updated 6 days ago</p>
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="repo--title">
+                        <h3 class="repo--name">Book-API</h3>
+                        <button class="repo--button"><i class="far fa-star"></i> Star</button>
+                    </div>
+                    <div class="repo--details">
+                       <p class="repo--language"><i class="fas fa-circle"></i> Vue</p>
+                       <p class="repo--time">Updated 6 days ago</p>
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="repo--title">
+                        <h3 class="repo--name">Book-API</h3>
+                        <button class="repo--button"><i class="far fa-star"></i> Star</button>
+                    </div>
+                    <div class="repo--details">
+                       <p class="repo--language"><i class="fas fa-circle"></i> Vue</p>
+                       <p class="repo--time">Updated 6 days ago</p>
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="repo--title">
+                        <h3 class="repo--name">Book-API</h3>
+                        <button class="repo--button"><i class="far fa-star"></i> Star</button>
+                    </div>
+                    <div class="repo--details">
+                       <p class="repo--language"><i class="fas fa-circle"></i> Vue</p>
+                       <p class="repo--time">Updated 6 days ago</p>
+                    </div>
+                   </li>
                 </ul>
-                <div class="repo--pagination">
-                    <button class="repo--pagination-prev">Previous</button>
-                    <button class="repo--pagination-next">Next</button>
-                </div>
             </div>
         </section>
         
 
+
+        <div class="floating--profile">
+            <img src="./img/profile.jpg" alt="">
+            <p>celebritydeveloper</p>
+        </div>
         <div class="select--option-modal" id="languageModal">
             <ul class="select--option-list">
                 <li>Select Language <span>x</span></li>
